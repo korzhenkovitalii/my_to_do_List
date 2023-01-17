@@ -1,0 +1,26 @@
+.projects__wrapper {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  left: 90px;
+  top: 0;
+  padding: 30px 20px;
+  background: #222327;
+}
+
+.projects__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.projects__list {
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+.content{
+  margin-left: 300px;
+  padding-left: 32px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);;
+}

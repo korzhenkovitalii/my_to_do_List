@@ -1,0 +1,28 @@
+.tasks__box {
+  padding: 24px 16px;
+  background: #24262c;
+  border-radius: 12px;
+  height: 100vh;
+}
+
+
+.tasks__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tasks__item {
+  width: 320px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  background: #292b31;
+  border-radius: 12px;
+  padding: 20px;
+}

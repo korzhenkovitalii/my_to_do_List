@@ -1,0 +1,24 @@
+.task__name {
+  margin-bottom: 30px;
+}
+
+.task__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  padding: 8px 16px;
+  border: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 17px;
+}
+
+.task__wrapper{
+  display: flex;
+  gap: 5px;
+}
+
+.task__button{
+  margin-bottom: 20px;
+}

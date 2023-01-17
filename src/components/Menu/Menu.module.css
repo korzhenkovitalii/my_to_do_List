@@ -1,0 +1,14 @@
+.tasks__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tasks__title {
+}
+
+.tasks__button {
+  padding: 5px 12px;
+  border-radius: 10px;
+}
