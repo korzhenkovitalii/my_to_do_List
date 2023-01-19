@@ -3,17 +3,17 @@ import { Card } from "../../Card/Card";
 import { Menu } from "../../Menu/Menu";
 import css from "../AllTasks/AllTasks.module.css";
 
-export const AllTasks = () => {
+export const InProgress = () => {
   const props = useOutletContext();
   const { tasks, setTasks, deleteTask } = props;
 
-  // console.log(props);
+  const to_do_Tasks = tasks.filter((item) => item.status === "in_progress");
 
   return (
     <div className={css.tasks__box}>
-      <Menu tasks={tasks} setTasks={setTasks} />
+      <Menu tasks={to_do_Tasks} setTasks={setTasks} />
       <ul className={css.tasks__list}>
-        {tasks.map(({ id, text, status }) => (
+        {to_do_Tasks.map(({ id, text, status }) => (
           <li className={css.tasks__item} key={id}>
             <Card
               text={text}

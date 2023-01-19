@@ -12,9 +12,10 @@ export const Menu = ({ tasks, setTasks }) => {
 
   return (
     <div className={css.tasks__header}>
-      <h2 className={css.tasks__title}>All Tasks {tasks.length}</h2>
+      <h2 className={css.tasks__title}>{tasks.length} Tasks </h2>
       <div>
         <input
+          className={css.tasks__input}
           type="text"
           placeholder="New task"
           value={value}

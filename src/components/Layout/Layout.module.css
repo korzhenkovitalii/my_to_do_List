@@ -1,7 +1,6 @@
 .container {
   position: relative;
   padding: 0 30px;
-  max-width: 1564px;
-  height: 100vh;
-  background: url(https://www.theladders.com/wp-content/uploads/to-do-list-190702.jpg) repeat;
+  background: #2a2b2f;
+  height: 100pc;
 }

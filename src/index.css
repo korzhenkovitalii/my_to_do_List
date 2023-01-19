@@ -2,7 +2,7 @@
 
 body {
   box-sizing: border-box;
-  
+
   margin: 0;
   font-family: "Exo 2";
   font-style: normal;
@@ -11,7 +11,6 @@ body {
   line-height: 100%;
 
   color: #fff;
-  
 }
 a {
   color: #fff;
@@ -34,6 +33,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
 }
 ul,
 ol {

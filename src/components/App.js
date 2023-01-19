@@ -3,7 +3,8 @@ import "./App.css";
 import { Layout } from "./Layout/Layout";
 import { Projects } from "../pages/Projects/Projects";
 import { AllTasks } from "./projects/AllTasks/AllTasks";
-import { To_do } from "./projects/To_do/To_do";
+import { ToDo } from "./projects/To_do/To_do";
+import { InProgress } from "./projects/In_progres/In_progres";
 import { Done } from "./projects/Done/Done";
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/projects" element={<Projects />}>
             <Route path="all_tasks" element={<AllTasks />} />
-            <Route path="to_do" element={<To_do />} />
-            <Route path="in_progress" element={<div>in_progress</div>} />
+            <Route path="to_do" element={<ToDo />} />
+            <Route path="in_progress" element={<InProgress />} />
             <Route path="done" element={<Done />} />
           </Route>
           <Route path="/user" element={<div>User</div>} />

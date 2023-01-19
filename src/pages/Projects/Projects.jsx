@@ -28,25 +28,6 @@ export const Projects = () => {
     },
   ]);
 
-  const [value, setValue] = useState("");
-  const [edit, setEdit] = useState(null);
-  console.log(value);
-  console.log(tasks);
-
-  function editTask(id) {
-    setEdit(id);
-  }
-  function saveTask(id) {
-    let newTask = tasks.map((item) => {
-      if (item.id === id) {
-        item.text = value;
-      }
-      return item;
-    });
-    setTasks(newTask);
-    setEdit(null);
-  }
-
   function deleteTask(id) {
     let newTasks = tasks.filter((item) => item.id !== id);
     setTasks(newTasks);
@@ -56,12 +37,6 @@ export const Projects = () => {
     tasks,
     setTasks,
     deleteTask,
-    edit,
-    setEdit,
-    value,
-    setValue,
-    editTask,
-    saveTask
   };
 
   return (
