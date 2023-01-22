@@ -2,7 +2,11 @@
   font-weight: 700;
   margin-bottom: 30px;
 }
-
+.task__name__done {
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-decoration: line-through;
+}
 .task__button {
   display: flex;
   justify-content: center;

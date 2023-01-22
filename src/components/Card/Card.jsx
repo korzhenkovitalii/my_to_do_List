@@ -1,7 +1,7 @@
 import css from "../Card/Card.module.css";
 import { useState } from "react";
 
-export const Card = ({ text, id, tasks, setTasks, deleteTask }) => {
+export const Card = ({ text, id,status, tasks, setTasks, deleteTask }) => {
   const [value, setValue] = useState("");
   const [edit, setEdit] = useState(null);
 
@@ -43,7 +43,11 @@ export const Card = ({ text, id, tasks, setTasks, deleteTask }) => {
         </div>
       ) : (
         <>
-          <p className={css.task__name}>{text}</p>
+          {status === "done" ? (
+            <p className={css.task__name__done}>{text}</p>
+          ) : (
+            <p className={css.task__name}>{text}</p>
+          )}
           <div className={css.task__wrapper}>
             <button className={css.task__button} onClick={() => editTask(id)}>
               Rename

@@ -2,5 +2,9 @@
   position: relative;
   padding: 0 30px;
   background: #2a2b2f;
-  height: 100pc;
+  min-height: 100vh;
+  background-image: url(https://www.cup.com.hk/wp-content/uploads/2018/08/iStock-167305409-e1535538757293.jpg);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
 }
